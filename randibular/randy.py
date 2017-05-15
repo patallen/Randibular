@@ -6,7 +6,7 @@ NAMES = ["Jose", "Vendela", "Joe", "Waldron", "Hampus", "Jonathan", "Viktor"]
 
 
 def random_name():
-    """Grab a random name from the NAMES constant above."""
+    """Grab a random name from the NAMES above."""
     return NAMES[random.randint(0, len(NAMES) - 1)]
 
 
