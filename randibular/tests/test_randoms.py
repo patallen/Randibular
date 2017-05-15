@@ -21,6 +21,7 @@ def test_name_value_invalid_char():
     with pytest.raises(Exception) as e:
         randy.name_value(j_money)
 
+
 @pytest.mark.three
 @pytest.mark.parametrize("name, expected", [
     ("bob", 16), ("Xavier Zachary", 148), ("Abe", 5), ("Stove Jobes", 122)
@@ -85,5 +86,5 @@ def test_approximate_name_value():
     assert pytest.approx(waldron_worth, .0001) == 11.4285714286
 
     # Assert something is within += specified range
-    assert pytest.approx(7.65431, 0.01) == 7.654300  # meaning: (7.654321 +- 1%) == 7.654300
-
+    # meaning: (7.654321 +- 1%) == 7.654300
+    assert pytest.approx(7.65431, 0.01) == 7.654300

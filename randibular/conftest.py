@@ -4,8 +4,6 @@ conftest.py seems to be where shared stuff goes.
 We an have fixtures that can be applied to tests individually, by the
 module, or for the entirity of the session (global)
 """
-
-
 import pytest
 
 

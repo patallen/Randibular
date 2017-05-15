@@ -47,6 +47,7 @@ def inform_random():
     thought = "Hey {name}! I heard your name is worth {value}!?!?"
     return thought.format(name=name, value=value)
 
+
 def inform_user_email():
     """Pick a random user and email her value."""
     rand_user = random_name()
@@ -55,6 +56,6 @@ def inform_user_email():
     send_email(email="{}".format(email), value=value)
 
 
-def send_email(email, message):
+def send_email(email, value):
     """Function that sends a message to a user via email."""
     raise Exception("This email would totally go to {}".format(email))
